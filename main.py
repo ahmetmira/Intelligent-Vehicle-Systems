@@ -132,7 +132,7 @@ if __name__ == "__main__":
 
     ####    Detect Cars on a single photo ####
 
-    output_image = Car_detection_single_photo(input_photo ='photos/test3.jpg')
+    output_image = Car_detection_single_photo(input_photo ='photos/photo-1.jpg')
 
     # Show resulted photo
     cv2.imshow('output_image', output_image)
@@ -140,7 +140,7 @@ if __name__ == "__main__":
     cv2.destroyAllWindows()
 
     # Save photo
-    cv2.imwrite('photos/test3_object_detected.jpg', output_image*255)
+    cv2.imwrite('photos/photo_1_object_detected.jpg', output_image*255)
 
 ####   Detect Cars on a video and save ######
-    Car_detection_video(input_video_name='photos/overpass.mp4', output_video_name ='photos/overpass_output1.avi')
+    Car_detection_video(input_video_name='photos/video-1.mp4', output_video_name ='photos/video_1_output1.avi')
