@@ -28,12 +28,6 @@ def resize_image(image):
     images = tf.expand_dims(image, axis=0)/255
     return images
 
-def get_image_from_plot():
-    # crates a numpy array from the output_image of the plot\figure
-    canvas = FigureCanvasAgg(Figure())
-    canvas.draw()
-    return np.fromstring(canvas.tostring_rgb(), dtype='uint8')
-
 def trained_yolov4_model():
     # load trained yolov4 model
     model = YOLOv4(
